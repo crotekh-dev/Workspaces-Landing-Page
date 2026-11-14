@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Workspaces: your work, wherever you are</title>
+<meta name="description" content="Notes, tasks, time, plans and links in one calm, offline-first workspace. Free today, built to grow into remote-team management." />
+<meta property="og:title" content="Workspaces: your work, wherever you are" />
+<meta property="og:description" content="One calm workspace for notes, tasks, time and plans. Free, offline-first, installable." />
+<meta property="og:image" content="assets/og.png" />
+<meta name="theme-color" content="#0a682c" />
+<link rel="icon" href="assets/icon.png" />
+<link rel="stylesheet" href="styles.css" />
+<script src="script.js" defer></script>
+</head>
+<body>
+<div class="prog" id="prog"></div>
+<header class="nav"><div class="wrap nav-in">
+  <a class="brand" href="#top"><img src="assets/icon.png" alt="" width="32" height="32" />Workspaces</a>
+  <nav class="links" aria-label="Main"><a href="#features">Features</a><a href="#roadmap">Roadmap</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+  <div class="nav-act">
+    <button class="icon-btn" id="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
+    <a class="btn btn-p" href="https://workspaces-one.vercel.app">Open app</a>
+  </div>
+</div></header>
+
+<main id="top">
+<section class="hero wrap">
+  <span class="pill">Productivity, built for the remote future</span>
+  <h1>Your work, <em>wherever you are.</em></h1>
+  <p class="lead">Notes, tasks, time and plans in one calm place. Free today, offline-first, and growing into a home for remote teams.</p>
+  <div class="cta"><a class="btn btn-p btn-l" href="https://workspaces-one.vercel.app">Open Workspaces free</a><a class="btn btn-g btn-l" href="#pricing">See pricing</a></div>
+  <ul class="trust"><li>Offline-first</li><li>No sign-up</li><li>Installable</li><li>Data stays on your device</li></ul>
+  <div class="frame" id="frame" aria-label="Workspaces screenshots">
+    <div class="bar"><i></i><i></i><i></i><b id="cap">Notes</b></div>
+    <div class="shots" id="shots"></div>
+    <div class="dots" id="dots" role="tablist"></div>
+  </div>
+</section>
+
+<section class="wrap stats rv" aria-label="At a glance"><div><strong data-n="6">0</strong><span>tools in one place</span></div><div><strong data-n="0">0</strong><span>sign-ups needed</span></div><div><strong data-n="100" data-s="%">0</strong><span>works offline</span></div><div><strong data-n="1">0</strong><span>tap to install</span></div></section>
+
+<section class="wrap sec" id="tour">
+  <h2>See it in action</h2>
+  <p class="sub">Scroll through a day with Workspaces.</p>
+  <div class="tour">
+    <ol class="steps">
+      <li><h3>Capture it</h3><p>Jot down ideas in Notes before they slip away, sorted by category.</p></li>
+      <li><h3>Plan it</h3><p>Turn ideas into a Todo list with priorities and a progress bar.</p></li>
+      <li><h3>Time it</h3><p>Start the stopwatch, run a focus timer or set a labelled alarm.</p></li>
+      <li><h3>Schedule it</h3><p>Drop events in the Calendar and export them when you need to.</p></li>
+      <li><h3>Work it out</h3><p>Crunch numbers, convert units and currencies in the Calculator.</p></li>
+      <li><h3>Keep it close</h3><p>Save the sites you use daily in Links, one tap away.</p></li>
+    </ol>
+    <div class="stick"><div class="frame2"><div class="shots" id="tourShots"></div></div></div>
+  </div>
+</section>
+
+<section class="wrap sec" id="features">
+  <h2>Six tools. One calm place.</h2>
+  <p class="sub">Each tool is small and focused, so the whole thing stays fast.</p>
+  <div class="bento">
+    <article class="card big rv"><b>01</b><h3>Notes</h3><p>Capture ideas the moment they arrive, filtered by category and saved on your device.</p></article>
+    <article class="card rv"><b>02</b><h3>Todo</h3><p>Priorities, reordering and a progress bar that rewards you.</p></article>
+    <article class="card rv"><b>03</b><h3>Stopwatch</h3><p>Stopwatch, countdown timer and labelled alarms.</p></article>
+    <article class="card rv"><b>04</b><h3>Calendar</h3><p>A month at a glance, with events you can export.</p></article>
+    <article class="card big rv"><b>05</b><h3>Calculator</h3><p>Standard and scientific modes, unit and currency converters, and a history.</p></article>
+    <article class="card rv"><b>06</b><h3>Links</h3><p>Your everyday sites, grouped and searchable.</p></article>
+  </div>
+</section>
+
+<section class="wrap sec" id="roadmap">
+  <h2>From personal hub to remote workplace</h2>
+  <p class="sub">Built in stages, so every step is useful on its own.</p>
+  <ol class="road">
+    <li class="live rv"><span>Live</span><h3>Personal workspace</h3><p>Six tools, offline, on your device.</p></li>
+    <li class="rv"><span>Next</span><h3>Accounts and sync</h3><p>Pick up on any device.</p></li>
+    <li class="rv"><span>Planned</span><h3>Teams</h3><p>Shared tasks, calendars and notes.</p></li>
+    <li class="rv"><span>Planned</span><h3>Admin management</h3><p>Roles, dashboards and reports.</p></li>
+    <li class="rv"><span>Vision</span><h3>Remote-first</h3><p>No physical location needed.</p></li>
+  </ol>
+</section>
+
+<section class="wrap sec" id="pricing">
+  <h2>Simple pricing in naira</h2>
+  <p class="sub">Start free. Paid plans arrive with sync and teams; join the waitlist to get early access.</p>
+  <div class="bill"><span>Monthly</span><button id="bill" type="button" role="switch" aria-checked="false" aria-label="Bill yearly"><i></i></button><span>Yearly <em>save 20%</em></span></div>
+  <div class="plans">
+    <article class="plan rv"><h3>Free</h3><p class="d">Everything you can use today.</p><p class="price"><strong>₦0</strong><small>forever</small></p>
+      <ul><li>All six tools</li><li>Works offline</li><li>Installable app</li><li>Light and dark mode</li></ul>
+      <a class="btn btn-g" href="https://workspaces-one.vercel.app">Open Workspaces</a></article>
+    <article class="plan pop rv"><span class="tag">Most popular</span><h3>Pro</h3><p class="d">Sync across all your devices.</p>
+      <p class="price"><strong data-m="₦3,500" data-y="₦2,800">₦3,500</strong><small data-m="per month" data-y="per month, billed ₦33,600 yearly">per month</small></p>
+      <ul><li>Everything in Free</li><li>Cloud backup and sync</li><li>Unlimited notes and links</li><li>Priority support</li></ul>
+      <a class="btn btn-p" href="mailto:raymonodg@gmail.com?subject=Workspaces%20Pro%20waitlist">Join the waitlist</a></article>
+    <article class="plan rv"><h3>Teams</h3><p class="d">For remote teams and admins.</p>
+      <p class="price"><strong data-m="₦9,000" data-y="₦7,200">₦9,000</strong><small data-m="per seat, per month" data-y="per seat, billed ₦86,400 yearly">per seat, per month</small></p>
+      <ul><li>Everything in Pro</li><li>Shared workspaces</li><li>Roles and permissions</li><li>Progress dashboards</li></ul>
+      <a class="btn btn-g" href="mailto:raymonodg@gmail.com?subject=Workspaces%20Teams%20waitlist">Join the waitlist</a></article>
+  </div>
+  <div class="tbl rv"><table><thead><tr><th>Compare plans</th><th>Free</th><th>Pro</th><th>Teams</th></tr></thead><tbody>
+    <tr><td>All six tools</td><td>✓</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Works offline</td><td>✓</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Installable app</td><td>✓</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Cloud backup and sync</td><td>–</td><td>✓</td><td>✓</td></tr>
+    <tr><td>Shared workspaces</td><td>–</td><td>–</td><td>✓</td></tr>
+    <tr><td>Roles and permissions</td><td>–</td><td>–</td><td>✓</td></tr>
+    <tr><td>Progress dashboards</td><td>–</td><td>–</td><td>✓</td></tr>
+    <tr><td>Priority support</td><td>–</td><td>✓</td><td>✓</td></tr>
+  </tbody></table></div>
+</section>
+
+<section class="wrap sec" id="install">
+  <h2>Install it like a real app</h2>
+  <p class="sub">Open Workspaces once, then add it to your device. It launches in its own window and works offline.</p>
+  <div class="inst">
+    <article class="card rv"><b>Android</b><h3>Chrome</h3><p>Open the menu and tap Install app.</p></article>
+    <article class="card rv"><b>iPhone and iPad</b><h3>Safari</h3><p>Tap Share, then Add to Home Screen.</p></article>
+    <article class="card rv"><b>Computer</b><h3>Chrome or Edge</h3><p>Click the install icon in the address bar.</p></article>
+  </div>
+</section>
+
+<section class="wrap sec" id="faq">
+  <h2>Questions, answered</h2>
+  <div class="faq">
+    <details><summary>Is Workspaces really free?</summary><p>Yes. The personal workspace is free with no sign-up. Paid plans only cover sync and team features that are still being built.</p></details>
+    <details><summary>Does it work offline?</summary><p>Yes. Install it as an app and it keeps working without internet, saving your data on your own device.</p></details>
+    <details><summary>Where is my data stored?</summary><p>On your device, in your browser. Nothing is uploaded unless you choose a future sync plan.</p></details>
+    <details><summary>When will Pro and Teams launch?</summary><p>They follow the roadmap above. Join a waitlist and you will hear first.</p></details>
+  </div>
+</section>
+
+<section class="wrap"><div class="final"><h2>Ready to work from anywhere?</h2><p>Open Workspaces and start in seconds. No account needed.</p><a class="btn btn-w btn-l" href="https://workspaces-one.vercel.app">Open Workspaces free</a></div></section>
+</main>
+
+<footer class="wrap foot"><span>&copy; <span id="yr">2026</span> Workspaces by Odu Raymond Chibuike</span>
+<span><a href="https://oduraymondchibuikeportfolio.vercel.app">Portfolio</a><a href="mailto:raymonodg@gmail.com">Contact</a><a href="https://workspaces-one.vercel.app/Components/About/about.html">About</a></span></footer>
+</body>
+</html>
